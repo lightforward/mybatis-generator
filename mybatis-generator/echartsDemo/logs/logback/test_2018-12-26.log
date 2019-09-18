@@ -1,0 +1,1615 @@
+2018-12-26 14:14:31 restartedMain INFO Starting TestApplication on DESKTOP-FEOMHCK with PID 14136 (F:\IDEA\test\target\classes started by WangNengShun in F:\IDEA\test)
+2018-12-26 14:14:31 restartedMain DEBUG Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-12-26 14:14:31 restartedMain INFO No active profile set, falling back to default profiles: default
+2018-12-26 14:14:32 background-preinit INFO HV000001: Hibernate Validator 5.3.6.Final
+2018-12-26 14:14:32 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1130394b: startup date [Wed Dec 26 14:14:32 CST 2018]; root of context hierarchy
+2018-12-26 14:14:37 restartedMain INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$935eb9ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-26 14:14:39 restartedMain INFO Tomcat initialized with port(s): 8088 (http)
+2018-12-26 14:14:39 restartedMain INFO Starting service [Tomcat]
+2018-12-26 14:14:39 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 14:14:39 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 14:14:39 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 6798 ms
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-26 14:14:39 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 14:14:41 restartedMain INFO {dataSource-1} inited
+2018-12-26 14:14:43 restartedMain INFO Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-26 14:14:43 restartedMain INFO HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-26 14:14:43 restartedMain INFO HHH000412: Hibernate Core {5.0.12.Final}
+2018-12-26 14:14:43 restartedMain INFO HHH000206: hibernate.properties not found
+2018-12-26 14:14:43 restartedMain INFO HHH000021: Bytecode provider name : javassist
+2018-12-26 14:14:43 restartedMain INFO HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-26 14:14:44 restartedMain INFO HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-26 14:14:45 restartedMain INFO HHH000227: Running hbm2ddl schema export
+2018-12-26 14:14:45 restartedMain ERROR HHH000389: Unsuccessful: create table job_entity (id integer not null auto_increment, cron varchar(255), description varchar(255), group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(255), status varchar(255), vm_param varchar(255), primary key (id))
+2018-12-26 14:14:45 restartedMain ERROR You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(' at line 1
+2018-12-26 14:14:45 restartedMain INFO HHH000230: Schema export complete
+2018-12-26 14:14:45 restartedMain INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-26 14:14:47 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1130394b: startup date [Wed Dec 26 14:14:32 CST 2018]; root of context hierarchy
+2018-12-26 14:14:47 restartedMain INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2018-12-26 14:14:47 restartedMain INFO Mapped "{[/user/demo],methods=[GET]}" onto public com.example.test.model.User com.example.test.controller.UserController.demo()
+2018-12-26 14:14:47 restartedMain INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2018-12-26 14:14:47 restartedMain INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-26 14:14:47 restartedMain INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-26 14:14:47 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 14:14:47 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 14:14:47 restartedMain INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 14:14:48 restartedMain INFO Adding welcome page: class path resource [static/index.html]
+2018-12-26 14:14:49 restartedMain INFO LiveReload server is running on port 35729
+2018-12-26 14:14:49 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 14:14:49 restartedMain INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-26 14:14:49 restartedMain INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-26 14:14:49 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 14:14:49 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@484d7bea: startup date [Wed Dec 26 14:14:49 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1130394b
+2018-12-26 14:14:49 restartedMain INFO Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2018-12-26 14:14:50 restartedMain INFO Tomcat initialized with port(s): 54001 (http)
+2018-12-26 14:14:50 restartedMain INFO Starting service [Tomcat]
+2018-12-26 14:14:50 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 14:14:50 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 14:14:50 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 391 ms
+2018-12-26 14:14:50 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 14:14:50 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@484d7bea: startup date [Wed Dec 26 14:14:49 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1130394b
+2018-12-26 14:14:50 restartedMain INFO Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-26 14:14:50 restartedMain INFO Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2018-12-26 14:14:50 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 14:14:50 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 14:14:50 restartedMain INFO Initializing ProtocolHandler ["http-nio-54001"]
+2018-12-26 14:14:50 restartedMain INFO Starting ProtocolHandler ["http-nio-54001"]
+2018-12-26 14:14:50 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 14:14:50 restartedMain INFO Tomcat started on port(s): 54001 (http)
+2018-12-26 14:14:50 restartedMain INFO Starting beans in phase 0
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-26 14:14:50 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-26 14:14:51 restartedMain INFO Initializing ProtocolHandler ["http-nio-8088"]
+2018-12-26 14:14:51 restartedMain INFO Starting ProtocolHandler ["http-nio-8088"]
+2018-12-26 14:14:51 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 14:14:51 restartedMain INFO Tomcat started on port(s): 8088 (http)
+2018-12-26 14:14:51 restartedMain INFO Started TestApplication in 20.794 seconds (JVM running for 32.244)
+2018-12-26 14:15:34 http-nio-8088-exec-1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-26 14:15:34 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-26 14:15:34 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2018-12-26 14:15:35 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 14:15:35 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:15:35 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 14:15:35 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 14:15:36 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:16:22 http-nio-8088-exec-7 INFO filter url:/user/login.do
+2018-12-26 14:16:23 http-nio-8088-exec-5 INFO filter url:/user/login.do
+2018-12-26 14:16:23 http-nio-8088-exec-7 INFO logback 访问:登录接口
+2018-12-26 14:16:23 http-nio-8088-exec-5 INFO logback 访问:登录接口
+2018-12-26 14:16:23 http-nio-8088-exec-7 ERROR logback 访问:登录接口
+2018-12-26 14:16:23 http-nio-8088-exec-5 ERROR logback 访问:登录接口
+2018-12-26 14:16:24 http-nio-8088-exec-7 DEBUG ==>  Preparing: select * from user where userName = 'admin' and password = 'password' 
+2018-12-26 14:16:24 http-nio-8088-exec-7 DEBUG ==> Parameters: 
+2018-12-26 14:16:24 http-nio-8088-exec-5 DEBUG ==>  Preparing: select * from user where userName = 'admin' and password = 'password' 
+2018-12-26 14:16:24 http-nio-8088-exec-5 DEBUG ==> Parameters: 
+2018-12-26 14:16:25 http-nio-8088-exec-8 INFO filter url:/user/login.do
+2018-12-26 14:16:25 http-nio-8088-exec-8 INFO logback 访问:登录接口
+2018-12-26 14:16:25 http-nio-8088-exec-8 ERROR logback 访问:登录接口
+2018-12-26 14:16:25 http-nio-8088-exec-8 DEBUG ==>  Preparing: select * from user where userName = 'admin' and password = 'password' 
+2018-12-26 14:16:25 http-nio-8088-exec-8 DEBUG ==> Parameters: 
+2018-12-26 14:16:29 http-nio-8088-exec-9 INFO filter url:/user/login.do
+2018-12-26 14:16:29 http-nio-8088-exec-9 INFO logback 访问:登录接口
+2018-12-26 14:16:29 http-nio-8088-exec-9 ERROR logback 访问:登录接口
+2018-12-26 14:16:30 http-nio-8088-exec-9 DEBUG ==>  Preparing: select * from user where userName = 'admin' and password = 'password' 
+2018-12-26 14:16:30 http-nio-8088-exec-9 DEBUG ==> Parameters: 
+2018-12-26 14:16:30 http-nio-8088-exec-8 DEBUG <==      Total: 1
+2018-12-26 14:16:30 http-nio-8088-exec-7 DEBUG <==      Total: 1
+2018-12-26 14:16:30 http-nio-8088-exec-5 DEBUG <==      Total: 1
+2018-12-26 14:16:30 http-nio-8088-exec-9 DEBUG <==      Total: 1
+2018-12-26 14:16:30 http-nio-8088-exec-10 INFO filter url:/html/myIndex.html
+2018-12-26 14:16:30 http-nio-8088-exec-1 INFO filter url:/css/myIndex.css
+2018-12-26 14:16:30 http-nio-8088-exec-3 INFO filter url:/image/timg.jpg
+2018-12-26 14:17:06 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 14:17:06 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 14:17:06 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 14:17:06 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:17:06 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:17:08 http-nio-8088-exec-9 INFO filter url:/user/login.do
+2018-12-26 14:17:08 http-nio-8088-exec-9 INFO logback 访问:登录接口
+2018-12-26 14:17:08 http-nio-8088-exec-9 ERROR logback 访问:登录接口
+2018-12-26 14:17:08 http-nio-8088-exec-9 DEBUG ==>  Preparing: select * from user where userName = 'admin' and password = 'password' 
+2018-12-26 14:17:08 http-nio-8088-exec-9 DEBUG ==> Parameters: 
+2018-12-26 14:17:08 http-nio-8088-exec-9 DEBUG <==      Total: 1
+2018-12-26 14:17:08 http-nio-8088-exec-7 INFO filter url:/html/myIndex.html
+2018-12-26 14:17:08 http-nio-8088-exec-10 INFO filter url:/css/myIndex.css
+2018-12-26 14:17:08 http-nio-8088-exec-1 INFO filter url:/image/timg.jpg
+2018-12-26 14:17:09 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 14:17:09 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 14:17:12 http-nio-8088-exec-8 INFO filter url:/html/myIndex.html
+2018-12-26 14:17:12 http-nio-8088-exec-6 INFO filter url:/css/myIndex.css
+2018-12-26 14:17:12 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 14:17:12 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 14:17:58 http-nio-8088-exec-7 INFO filter url:/html/registered.html
+2018-12-26 14:17:58 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 14:17:58 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:17:58 http-nio-8088-exec-3 INFO filter url:/js/registered.js
+2018-12-26 14:17:58 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:18:00 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 14:18:00 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:18:00 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 14:18:00 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 14:18:00 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:18:01 http-nio-8088-exec-7 INFO filter url:/html/registered.html
+2018-12-26 14:18:01 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:18:01 http-nio-8088-exec-10 INFO filter url:/js/registered.js
+2018-12-26 14:18:01 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 14:18:01 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:18:02 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 14:18:02 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:18:02 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 14:18:02 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 14:18:02 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:18:04 http-nio-8088-exec-7 INFO filter url:/html/registered.html
+2018-12-26 14:18:04 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:18:04 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 14:18:04 http-nio-8088-exec-1 INFO filter url:/js/registered.js
+2018-12-26 14:18:04 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:18:05 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 14:18:05 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 14:18:05 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:18:05 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 14:18:05 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:18:07 http-nio-8088-exec-7 INFO filter url:/html/registered.html
+2018-12-26 14:18:07 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:18:07 http-nio-8088-exec-1 INFO filter url:/js/registered.js
+2018-12-26 14:18:07 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 14:18:07 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:26:22 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 14:26:22 http-nio-8088-exec-10 INFO filter url:/js/registered.js
+2018-12-26 14:26:22 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:26:22 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 14:26:25 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:26:27 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 14:27:50 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 14:27:50 http-nio-8088-exec-7 INFO filter url:/js/registered.js
+2018-12-26 14:27:50 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 14:27:50 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:27:51 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:27:52 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 14:27:54 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 14:27:54 http-nio-8088-exec-8 INFO filter url:/js/registered.js
+2018-12-26 14:27:54 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:27:54 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 14:27:54 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:27:54 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 14:27:55 http-nio-8088-exec-10 INFO filter url:/html/registered.html
+2018-12-26 14:27:55 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 14:27:55 http-nio-8088-exec-3 INFO filter url:/js/registered.js
+2018-12-26 14:27:55 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:27:55 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:27:55 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 14:27:56 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 14:27:56 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 14:27:56 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 14:27:56 http-nio-8088-exec-7 INFO filter url:/js/registered.js
+2018-12-26 14:27:56 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 14:27:56 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 15:27:39 restartedMain INFO Starting TestApplication on DESKTOP-FEOMHCK with PID 14004 (F:\IDEA\test\target\classes started by WangNengShun in F:\IDEA\test)
+2018-12-26 15:27:39 restartedMain DEBUG Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-12-26 15:27:39 restartedMain INFO No active profile set, falling back to default profiles: default
+2018-12-26 15:27:41 background-preinit INFO HV000001: Hibernate Validator 5.3.6.Final
+2018-12-26 15:27:41 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ac6054b: startup date [Wed Dec 26 15:27:41 CST 2018]; root of context hierarchy
+2018-12-26 15:27:55 restartedMain INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5845382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-26 15:28:01 restartedMain INFO Tomcat initialized with port(s): 8088 (http)
+2018-12-26 15:28:01 restartedMain INFO Starting service [Tomcat]
+2018-12-26 15:28:01 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 15:28:02 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 15:28:02 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 21126 ms
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-26 15:28:03 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 15:28:05 restartedMain INFO {dataSource-1} inited
+2018-12-26 15:28:07 restartedMain INFO Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-26 15:28:07 restartedMain INFO HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-26 15:28:10 restartedMain INFO HHH000412: Hibernate Core {5.0.12.Final}
+2018-12-26 15:28:10 restartedMain INFO HHH000206: hibernate.properties not found
+2018-12-26 15:28:10 restartedMain INFO HHH000021: Bytecode provider name : javassist
+2018-12-26 15:28:12 restartedMain INFO HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-26 15:28:15 restartedMain INFO HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-26 15:28:22 restartedMain INFO HHH000227: Running hbm2ddl schema export
+2018-12-26 15:28:23 restartedMain ERROR HHH000389: Unsuccessful: create table job_entity (id integer not null auto_increment, cron varchar(255), description varchar(255), group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(255), status varchar(255), vm_param varchar(255), primary key (id))
+2018-12-26 15:28:23 restartedMain ERROR You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(' at line 1
+2018-12-26 15:28:23 restartedMain INFO HHH000230: Schema export complete
+2018-12-26 15:28:23 restartedMain INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-26 15:28:28 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ac6054b: startup date [Wed Dec 26 15:27:41 CST 2018]; root of context hierarchy
+2018-12-26 15:28:28 restartedMain INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2018-12-26 15:28:28 restartedMain INFO Mapped "{[/user/demo],methods=[GET]}" onto public com.example.test.model.User com.example.test.controller.UserController.demo()
+2018-12-26 15:28:28 restartedMain INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2018-12-26 15:28:28 restartedMain INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-26 15:28:28 restartedMain INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-26 15:28:28 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 15:28:28 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 15:28:28 restartedMain INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 15:28:30 restartedMain INFO Adding welcome page: class path resource [static/index.html]
+2018-12-26 15:28:32 restartedMain INFO LiveReload server is running on port 35729
+2018-12-26 15:28:33 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 15:28:33 restartedMain INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-26 15:28:33 restartedMain INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-26 15:28:33 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 15:28:33 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3cc45b64: startup date [Wed Dec 26 15:28:33 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ac6054b
+2018-12-26 15:28:33 restartedMain INFO Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2018-12-26 15:28:33 restartedMain INFO Tomcat initialized with port(s): 54001 (http)
+2018-12-26 15:28:33 restartedMain INFO Starting service [Tomcat]
+2018-12-26 15:28:33 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 15:28:33 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 15:28:33 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 673 ms
+2018-12-26 15:28:33 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 15:28:33 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3cc45b64: startup date [Wed Dec 26 15:28:33 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ac6054b
+2018-12-26 15:28:34 restartedMain INFO Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2018-12-26 15:28:34 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 15:28:34 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 15:28:34 restartedMain INFO Initializing ProtocolHandler ["http-nio-54001"]
+2018-12-26 15:28:34 restartedMain INFO Starting ProtocolHandler ["http-nio-54001"]
+2018-12-26 15:28:34 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 15:28:34 restartedMain INFO Tomcat started on port(s): 54001 (http)
+2018-12-26 15:28:34 restartedMain INFO Starting beans in phase 0
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-26 15:28:34 restartedMain INFO Initializing ProtocolHandler ["http-nio-8088"]
+2018-12-26 15:28:34 restartedMain INFO Starting ProtocolHandler ["http-nio-8088"]
+2018-12-26 15:28:34 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 15:28:34 restartedMain INFO Tomcat started on port(s): 8088 (http)
+2018-12-26 15:28:34 restartedMain INFO Started TestApplication in 59.755 seconds (JVM running for 92.86)
+2018-12-26 15:31:16 http-nio-8088-exec-1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-26 15:31:16 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-26 15:31:16 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2018-12-26 15:31:16 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 15:31:16 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:31:16 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 15:31:16 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 15:31:16 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:31:16 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 15:31:22 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 15:31:22 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:31:22 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 15:31:22 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 15:31:22 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:31:23 http-nio-8088-exec-4 INFO filter url:/html/registered.html
+2018-12-26 15:31:23 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:31:23 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 15:31:23 http-nio-8088-exec-5 INFO filter url:/js/registered.js
+2018-12-26 15:31:23 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:35:25 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 15:35:26 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:35:26 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 15:35:26 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 15:35:30 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:35:30 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 15:35:47 http-nio-8088-exec-2 INFO filter url:/
+2018-12-26 15:35:47 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 15:35:47 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:35:47 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 15:35:47 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 15:35:47 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:35:54 http-nio-8088-exec-1 INFO filter url:/user/demo
+2018-12-26 15:35:59 http-nio-8088-exec-4 INFO filter url:/user/demo
+2018-12-26 15:36:05 http-nio-8088-exec-3 INFO filter url:/user/demo
+2018-12-26 15:36:08 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 15:36:08 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:36:08 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 15:36:08 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 15:36:08 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:36:17 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 15:36:17 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:36:17 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 15:36:17 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 15:36:17 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:36:18 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 15:36:18 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:36:18 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 15:36:18 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 15:36:19 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:36:20 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 15:36:20 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:36:20 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 15:36:20 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 15:36:20 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:36:27 http-nio-8088-exec-5 INFO filter url:/user/login.do
+2018-12-26 15:36:27 http-nio-8088-exec-5 INFO logback 访问:登录接口
+2018-12-26 15:36:27 http-nio-8088-exec-5 ERROR logback 访问:登录接口
+2018-12-26 15:36:27 http-nio-8088-exec-5 DEBUG ==>  Preparing: select * from user where userName = 'admin' and password = 'password' 
+2018-12-26 15:36:27 http-nio-8088-exec-5 DEBUG ==> Parameters: 
+2018-12-26 15:36:27 http-nio-8088-exec-5 DEBUG <==      Total: 1
+2018-12-26 15:36:27 http-nio-8088-exec-2 INFO filter url:/html/myIndex.html
+2018-12-26 15:36:27 http-nio-8088-exec-6 INFO filter url:/css/myIndex.css
+2018-12-26 15:36:27 http-nio-8088-exec-9 INFO filter url:/image/timg.jpg
+2018-12-26 15:36:30 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 15:36:30 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:36:30 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 15:36:30 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 15:36:30 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:37:04 http-nio-8088-exec-6 INFO filter url:/html/registered.html
+2018-12-26 15:37:04 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:37:04 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 15:37:04 http-nio-8088-exec-8 INFO filter url:/js/registered.js
+2018-12-26 15:37:04 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 15:37:04 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 15:37:20 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 15:37:20 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 15:37:20 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 15:37:20 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 15:37:20 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:07:06 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 16:07:06 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 16:07:06 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:07:06 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 16:07:06 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:07:07 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 16:07:07 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 16:07:07 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 16:07:07 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 16:07:07 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:07:07 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:07:07 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 16:07:09 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 16:07:09 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 16:07:09 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:07:10 http-nio-8088-exec-7 INFO filter url:/js/registered.js
+2018-12-26 16:07:10 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:07:37 http-nio-8088-exec-3 INFO filter url:/html/registered.html
+2018-12-26 16:07:43 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:07:59 http-nio-8088-exec-2 INFO filter url:/js/registered.js
+2018-12-26 16:39:24 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 16:39:24 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 16:39:24 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:24 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 16:39:24 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:25 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 16:39:25 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:25 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 16:39:25 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 16:39:25 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:26 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 16:39:26 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:26 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 16:39:26 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 16:39:26 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:27 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 16:39:27 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 16:39:27 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:27 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 16:39:27 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:28 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 16:39:28 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:28 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 16:39:28 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 16:39:28 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:29 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 16:39:29 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 16:39:29 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:29 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 16:39:29 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:30 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 16:39:30 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 16:39:30 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 16:39:30 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:30 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:31 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 16:39:31 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 16:39:31 http-nio-8088-exec-2 INFO filter url:/js/registered.js
+2018-12-26 16:39:31 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:31 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:32 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 16:39:32 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:32 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 16:39:32 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 16:39:32 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 16:39:33 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 16:39:33 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 16:39:33 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 16:39:33 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 16:39:33 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:03:11 restartedMain INFO Starting TestApplication on DESKTOP-FEOMHCK with PID 11324 (F:\IDEA\test\target\classes started by WangNengShun in F:\IDEA\test)
+2018-12-26 17:03:11 restartedMain DEBUG Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-12-26 17:03:11 restartedMain INFO No active profile set, falling back to default profiles: default
+2018-12-26 17:03:12 background-preinit INFO HV000001: Hibernate Validator 5.3.6.Final
+2018-12-26 17:03:12 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35cfcb7a: startup date [Wed Dec 26 17:03:12 CST 2018]; root of context hierarchy
+2018-12-26 17:03:15 restartedMain INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96cef7e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-26 17:03:16 restartedMain INFO Tomcat initialized with port(s): 8088 (http)
+2018-12-26 17:03:16 restartedMain INFO Starting service [Tomcat]
+2018-12-26 17:03:16 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 17:03:17 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 17:03:17 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 5002 ms
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-26 17:03:17 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 17:03:18 restartedMain INFO {dataSource-1} inited
+2018-12-26 17:03:18 restartedMain INFO Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-26 17:03:19 restartedMain INFO HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-26 17:03:19 restartedMain INFO HHH000412: Hibernate Core {5.0.12.Final}
+2018-12-26 17:03:19 restartedMain INFO HHH000206: hibernate.properties not found
+2018-12-26 17:03:19 restartedMain INFO HHH000021: Bytecode provider name : javassist
+2018-12-26 17:03:19 restartedMain INFO HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-26 17:03:19 restartedMain INFO HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-26 17:03:20 restartedMain INFO HHH000227: Running hbm2ddl schema export
+2018-12-26 17:03:20 restartedMain ERROR HHH000389: Unsuccessful: create table job_entity (id integer not null auto_increment, cron varchar(255), description varchar(255), group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(255), status varchar(255), vm_param varchar(255), primary key (id))
+2018-12-26 17:03:20 restartedMain ERROR You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(' at line 1
+2018-12-26 17:03:20 restartedMain INFO HHH000230: Schema export complete
+2018-12-26 17:03:20 restartedMain INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-26 17:03:21 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35cfcb7a: startup date [Wed Dec 26 17:03:12 CST 2018]; root of context hierarchy
+2018-12-26 17:03:21 restartedMain INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2018-12-26 17:03:21 restartedMain INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2018-12-26 17:03:21 restartedMain INFO Mapped "{[/user/demo],methods=[GET]}" onto public com.example.test.model.User com.example.test.controller.UserController.demo()
+2018-12-26 17:03:21 restartedMain INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-26 17:03:21 restartedMain INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-26 17:03:21 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:03:21 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:03:22 restartedMain INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:03:22 restartedMain INFO Adding welcome page: class path resource [static/index.html]
+2018-12-26 17:03:23 restartedMain INFO LiveReload server is running on port 35729
+2018-12-26 17:03:24 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 17:03:24 restartedMain INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-26 17:03:24 restartedMain INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-26 17:03:24 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 17:03:24 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d634135: startup date [Wed Dec 26 17:03:24 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35cfcb7a
+2018-12-26 17:03:24 restartedMain INFO Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2018-12-26 17:03:24 restartedMain INFO Tomcat initialized with port(s): 54001 (http)
+2018-12-26 17:03:24 restartedMain INFO Starting service [Tomcat]
+2018-12-26 17:03:24 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 17:03:24 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 17:03:24 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 388 ms
+2018-12-26 17:03:24 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 17:03:24 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d634135: startup date [Wed Dec 26 17:03:24 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35cfcb7a
+2018-12-26 17:03:24 restartedMain INFO Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2018-12-26 17:03:24 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:03:24 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:03:24 restartedMain INFO Initializing ProtocolHandler ["http-nio-54001"]
+2018-12-26 17:03:24 restartedMain INFO Starting ProtocolHandler ["http-nio-54001"]
+2018-12-26 17:03:24 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 17:03:25 restartedMain INFO Tomcat started on port(s): 54001 (http)
+2018-12-26 17:03:25 restartedMain INFO Starting beans in phase 0
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-26 17:03:25 restartedMain INFO Initializing ProtocolHandler ["http-nio-8088"]
+2018-12-26 17:03:25 restartedMain INFO Starting ProtocolHandler ["http-nio-8088"]
+2018-12-26 17:03:25 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 17:03:25 restartedMain INFO Tomcat started on port(s): 8088 (http)
+2018-12-26 17:03:25 restartedMain INFO Started TestApplication in 14.498 seconds (JVM running for 19.382)
+2018-12-26 17:10:30 http-nio-8088-exec-1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-26 17:10:30 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-26 17:10:30 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 70 ms
+2018-12-26 17:10:30 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 17:10:30 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:10:30 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:10:30 http-nio-8088-exec-5 INFO filter url:/js/registered.js
+2018-12-26 17:10:30 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:10:30 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:35:50 Thread-36 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35cfcb7a: startup date [Wed Dec 26 17:03:12 CST 2018]; root of context hierarchy
+2018-12-26 17:35:50 Thread-36 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d634135: startup date [Wed Dec 26 17:03:24 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35cfcb7a
+2018-12-26 17:35:51 Thread-36 INFO Stopping beans in phase 0
+2018-12-26 17:35:51 Thread-36 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-26 17:35:51 Thread-36 INFO Unregistering JMX-exposed beans
+2018-12-26 17:35:51 Thread-36 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-26 17:35:51 Thread-36 INFO Unregistering JMX-exposed beans
+2018-12-26 17:35:51 Thread-36 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-26 17:35:51 Thread-36 INFO {dataSource-1} closed
+2018-12-26 17:35:52 restartedMain INFO Starting TestApplication on DESKTOP-FEOMHCK with PID 11324 (F:\IDEA\test\target\classes started by WangNengShun in F:\IDEA\test)
+2018-12-26 17:35:52 restartedMain DEBUG Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-12-26 17:35:52 restartedMain INFO No active profile set, falling back to default profiles: default
+2018-12-26 17:35:52 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a63723b: startup date [Wed Dec 26 17:35:52 CST 2018]; root of context hierarchy
+2018-12-26 17:35:55 restartedMain INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96cef7e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-26 17:35:55 restartedMain INFO Tomcat initialized with port(s): 8088 (http)
+2018-12-26 17:35:55 restartedMain INFO Starting service [Tomcat]
+2018-12-26 17:35:55 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 17:35:55 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 17:35:55 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 3507 ms
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-26 17:35:55 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 17:35:56 restartedMain INFO {dataSource-2} inited
+2018-12-26 17:35:56 restartedMain INFO Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-26 17:35:56 restartedMain INFO HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-26 17:35:56 restartedMain INFO HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-26 17:35:56 restartedMain INFO HHH000227: Running hbm2ddl schema export
+2018-12-26 17:35:56 restartedMain ERROR HHH000389: Unsuccessful: create table job_entity (id integer not null auto_increment, cron varchar(255), description varchar(255), group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(255), status varchar(255), vm_param varchar(255), primary key (id))
+2018-12-26 17:35:56 restartedMain ERROR You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'group varchar(255), jar_path varchar(255), name varchar(255), parameter varchar(' at line 1
+2018-12-26 17:35:56 restartedMain INFO HHH000230: Schema export complete
+2018-12-26 17:35:56 restartedMain INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-26 17:35:56 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a63723b: startup date [Wed Dec 26 17:35:52 CST 2018]; root of context hierarchy
+2018-12-26 17:35:56 restartedMain INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2018-12-26 17:35:56 restartedMain INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.test.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2018-12-26 17:35:56 restartedMain INFO Mapped "{[/user/demo],methods=[GET]}" onto public com.example.test.model.User com.example.test.controller.UserController.demo()
+2018-12-26 17:35:56 restartedMain INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-26 17:35:56 restartedMain INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-26 17:35:56 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:35:56 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:35:56 restartedMain INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:35:56 restartedMain INFO Adding welcome page: class path resource [static/index.html]
+2018-12-26 17:35:56 restartedMain INFO LiveReload server is running on port 35729
+2018-12-26 17:35:57 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 17:35:57 restartedMain INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-26 17:35:57 restartedMain INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-26 17:35:57 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-26 17:35:57 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7deffc9b: startup date [Wed Dec 26 17:35:57 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a63723b
+2018-12-26 17:35:57 restartedMain INFO Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2018-12-26 17:35:57 restartedMain INFO Tomcat initialized with port(s): 54001 (http)
+2018-12-26 17:35:57 restartedMain INFO Starting service [Tomcat]
+2018-12-26 17:35:57 restartedMain INFO Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-26 17:35:57 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-12-26 17:35:57 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 309 ms
+2018-12-26 17:35:57 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-26 17:35:57 restartedMain INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7deffc9b: startup date [Wed Dec 26 17:35:57 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a63723b
+2018-12-26 17:35:57 restartedMain INFO Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2018-12-26 17:35:57 restartedMain INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:35:57 restartedMain INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-26 17:35:57 restartedMain INFO Initializing ProtocolHandler ["http-nio-54001"]
+2018-12-26 17:35:57 restartedMain INFO Starting ProtocolHandler ["http-nio-54001"]
+2018-12-26 17:35:57 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 17:35:57 restartedMain INFO Tomcat started on port(s): 54001 (http)
+2018-12-26 17:35:57 restartedMain INFO Starting beans in phase 0
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-26 17:35:57 restartedMain INFO Initializing ProtocolHandler ["http-nio-8088"]
+2018-12-26 17:35:57 restartedMain INFO Starting ProtocolHandler ["http-nio-8088"]
+2018-12-26 17:35:57 restartedMain INFO Using a shared selector for servlet write/read
+2018-12-26 17:35:57 restartedMain INFO Tomcat started on port(s): 8088 (http)
+2018-12-26 17:35:57 restartedMain INFO Started TestApplication in 5.963 seconds (JVM running for 1972.145)
+2018-12-26 17:36:08 http-nio-8088-exec-1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-26 17:36:08 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-26 17:36:08 http-nio-8088-exec-1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2018-12-26 17:36:08 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 17:36:08 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:36:08 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:36:08 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 17:36:08 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:36:08 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:36:17 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:36:17 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:36:17 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:36:17 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:36:17 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:39:05 http-nio-8088-exec-6 INFO filter url:/html/registered.html
+2018-12-26 17:39:05 http-nio-8088-exec-10 INFO filter url:/js/registered.js
+2018-12-26 17:39:05 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:39:05 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:39:06 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:39:14 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:39:14 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:39:14 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:39:14 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:39:14 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:11 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:50:11 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:50:11 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:11 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:50:11 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:11 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:50:12 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:50:12 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:50:12 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:12 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:50:12 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:12 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:50:12 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:50:12 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:50:12 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:50:12 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:12 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:12 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:50:12 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:50:12 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:12 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:50:12 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:50:12 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:12 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:50:15 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:50:15 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:15 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:50:15 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:50:15 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:15 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:50:15 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:50:15 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:15 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:50:15 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:50:15 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:15 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:50:15 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:50:15 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:15 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:50:15 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:50:15 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:15 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 17:50:16 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 17:50:16 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:16 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:50:16 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:50:16 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:16 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:50:16 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:50:16 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:16 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:50:16 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:50:16 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:16 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:50:16 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:50:16 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:16 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:50:16 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:50:16 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:16 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:50:16 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:50:16 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:16 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:50:16 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:50:16 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:16 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:50:17 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:50:17 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:17 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:50:17 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:50:17 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:17 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:50:28 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 17:50:28 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:50:28 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:28 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:50:28 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:28 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:50:29 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:50:29 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:29 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:50:29 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:50:29 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:29 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:50:29 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:50:29 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:50:29 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:50:29 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:29 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:29 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:50:29 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:50:29 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:29 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:50:29 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:50:29 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:29 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:50:29 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:50:29 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:29 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:50:29 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:50:29 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:29 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:50:30 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 17:50:30 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:30 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:50:30 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:50:30 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:30 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:50:30 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 17:50:30 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:30 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:50:30 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 17:50:31 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:50:32 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:50:32 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:50:32 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:50:32 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:50:32 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:21 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:51:21 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:51:21 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:22 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:51:22 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:22 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:51:22 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:51:22 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:51:22 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:22 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:51:22 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:22 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:51:23 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:51:23 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:23 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:51:23 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:51:23 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:23 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:51:23 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:51:23 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:23 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:51:23 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:51:23 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:23 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:51:23 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:51:23 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:23 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:51:23 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:51:23 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:23 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:51:31 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:51:31 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:51:31 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:31 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:51:32 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:32 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:51:32 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:51:32 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:32 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:51:32 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:51:32 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:32 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:51:32 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:51:32 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:32 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:51:32 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:51:32 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:32 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:51:32 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:51:33 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:33 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:51:33 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:51:33 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:33 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:51:33 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:51:33 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:33 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:51:33 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:51:33 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:33 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:51:33 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:51:33 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:33 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:51:33 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:51:33 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:33 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:51:34 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:51:35 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:35 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:51:35 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:51:35 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:35 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:51:35 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:51:35 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:51:35 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:51:35 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:51:35 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:51:35 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:52:14 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:52:14 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:14 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:52:14 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:52:14 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:14 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:52:15 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 17:52:15 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:52:15 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:15 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:52:15 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:15 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:52:15 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:52:15 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:15 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:52:15 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:52:15 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:15 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:52:15 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:52:15 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:15 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:52:15 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:52:15 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:15 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:52:15 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:52:15 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:15 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:52:15 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:52:15 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:15 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:52:15 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:52:15 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:15 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:52:15 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:52:16 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:16 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:52:16 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:52:16 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:16 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:52:16 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:52:16 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:16 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:52:16 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:52:16 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:16 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:52:16 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:52:16 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:16 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:52:16 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:52:16 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:52:16 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:16 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:52:16 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:16 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:52:34 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:52:34 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:34 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:52:34 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:52:34 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:34 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:52:35 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:52:35 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:52:35 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:35 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:52:35 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:35 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:52:35 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:52:35 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:35 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:52:35 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:52:35 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:35 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:52:35 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:52:35 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:35 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:52:35 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:52:35 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:35 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:52:35 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:52:36 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:36 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:52:36 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:52:36 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:36 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:52:36 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:52:36 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:36 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:52:36 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:52:36 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:36 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:52:36 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:52:36 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:36 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:52:36 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:52:36 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:36 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:52:36 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:52:36 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:36 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:52:36 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:52:36 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:36 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 17:52:36 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:52:36 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:36 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:52:36 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:52:36 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:36 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:52:49 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:52:49 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:49 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:52:49 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:52:49 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:49 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:52:50 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:52:50 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:50 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:52:50 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:52:50 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:50 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:52:50 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:52:50 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:50 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:52:50 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:52:50 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:50 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:52:50 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:52:50 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:50 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:52:50 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:52:50 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:50 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:52:50 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:52:50 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:50 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:52:50 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:52:50 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:51 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:52:51 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:52:51 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:52:51 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:52:51 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:52:51 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:52:51 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:53:05 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:53:05 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:53:05 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:53:05 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:53:05 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:53:05 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 17:53:05 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:53:05 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:53:05 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:53:05 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:53:06 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:53:06 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:53:06 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:53:06 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:53:06 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:53:06 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:53:06 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:53:06 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:53:06 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:53:06 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:53:06 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:53:06 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:53:06 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:53:06 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 17:53:07 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 17:53:07 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:53:07 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:53:07 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:53:07 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:53:07 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:54:04 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:54:04 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:04 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:54:04 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:54:04 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:04 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:54:05 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:54:05 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:05 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:54:05 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:54:05 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:05 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:54:06 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:54:06 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:06 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:54:06 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:54:06 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:06 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:54:06 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:54:06 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:06 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:54:06 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:54:06 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:06 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:54:07 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 17:54:07 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:07 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:54:07 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:54:07 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:07 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:54:07 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:54:07 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:07 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:54:07 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:54:07 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:07 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:54:07 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:54:07 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:07 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:54:07 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:54:07 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:07 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 17:54:07 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:54:07 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:07 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:54:07 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:54:07 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:07 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:54:08 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:54:08 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:08 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:54:08 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:54:08 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:08 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:54:08 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:54:08 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:08 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:54:08 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:54:08 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:08 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2018-12-26 17:54:10 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:54:10 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:10 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:54:10 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:54:10 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:10 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:54:10 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:54:10 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:10 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:54:10 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:54:10 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:10 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:54:10 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:54:10 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:10 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:54:10 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:54:11 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:11 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:54:11 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:54:11 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:11 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:54:11 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:54:11 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:11 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:54:30 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:54:30 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:30 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:54:30 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:54:30 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:30 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:54:31 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:54:31 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:31 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:54:31 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:54:31 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:31 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:54:31 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:54:31 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:31 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:54:31 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:54:31 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:31 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:54:31 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:54:31 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:31 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:54:31 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:54:32 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:32 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:54:32 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:54:32 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:54:32 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:54:32 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:54:32 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:54:32 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:56:24 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:56:24 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:24 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:56:24 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:56:24 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:56:24 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:56:24 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:56:24 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:24 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:56:24 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:56:24 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:56:25 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:56:25 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:56:25 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:25 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:56:25 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:56:25 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:56:25 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:56:25 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:56:25 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:25 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:56:25 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:56:25 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:56:25 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:56:26 http-nio-8088-exec-6 INFO filter url:/html/registered.html
+2018-12-26 17:56:26 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:26 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:56:26 http-nio-8088-exec-2 INFO filter url:/js/registered.js
+2018-12-26 17:56:26 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:56:33 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:56:33 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:33 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:56:33 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:56:33 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:56:34 http-nio-8088-exec-6 INFO filter url:/html/registered.html
+2018-12-26 17:56:34 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:34 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:56:34 http-nio-8088-exec-5 INFO filter url:/js/registered.js
+2018-12-26 17:56:34 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:56:35 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:56:35 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:56:35 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:56:35 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:56:35 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:29 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:57:29 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:29 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:57:29 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:57:29 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:29 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:57:29 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:57:29 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:29 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:57:29 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:57:29 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:29 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:57:29 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:57:30 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:30 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:57:30 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:57:30 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:30 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:57:30 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:57:30 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:30 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:57:30 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:57:30 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:30 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:57:30 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:57:30 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:30 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:57:30 http-nio-8088-exec-1 INFO filter url:/js/registered.js
+2018-12-26 17:57:30 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:32 http-nio-8088-exec-9 INFO filter url:/html/registered.html
+2018-12-26 17:57:32 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:32 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:57:32 http-nio-8088-exec-5 INFO filter url:/js/registered.js
+2018-12-26 17:57:32 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:33 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:57:33 http-nio-8088-exec-10 INFO filter url:/html/registered.html
+2018-12-26 17:57:33 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:33 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:57:33 http-nio-8088-exec-3 INFO filter url:/js/registered.js
+2018-12-26 17:57:33 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:33 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:57:33 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 17:57:33 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:33 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:57:33 http-nio-8088-exec-2 INFO filter url:/js/registered.js
+2018-12-26 17:57:33 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:33 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:57:33 http-nio-8088-exec-3 INFO filter url:/html/registered.html
+2018-12-26 17:57:33 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:33 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:57:33 http-nio-8088-exec-5 INFO filter url:/js/registered.js
+2018-12-26 17:57:33 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:33 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:57:33 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:57:33 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:33 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:57:33 http-nio-8088-exec-7 INFO filter url:/js/registered.js
+2018-12-26 17:57:33 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:33 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:57:33 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 17:57:33 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:33 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:57:33 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 17:57:33 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:33 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:57:34 http-nio-8088-exec-7 INFO filter url:/html/registered.html
+2018-12-26 17:57:34 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:34 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:57:34 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 17:57:34 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:34 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:57:34 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 17:57:34 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:34 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:57:34 http-nio-8088-exec-10 INFO filter url:/js/registered.js
+2018-12-26 17:57:34 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:34 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:57:34 http-nio-8088-exec-3 INFO filter url:/html/registered.html
+2018-12-26 17:57:34 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:34 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:57:34 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 17:57:34 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:34 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:57:34 http-nio-8088-exec-10 INFO filter url:/html/registered.html
+2018-12-26 17:57:34 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:34 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:57:34 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 17:57:34 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:34 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:57:55 http-nio-8088-exec-4 INFO filter url:/html/registered.html
+2018-12-26 17:57:55 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:55 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:57:55 http-nio-8088-exec-2 INFO filter url:/js/registered.js
+2018-12-26 17:57:55 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:55 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:57:55 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 17:57:55 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:55 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:57:55 http-nio-8088-exec-5 INFO filter url:/js/registered.js
+2018-12-26 17:57:55 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:55 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:57:55 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:57:55 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:55 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:57:55 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 17:57:55 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:55 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:57:56 http-nio-8088-exec-3 INFO filter url:/html/registered.html
+2018-12-26 17:57:56 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:56 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:57:56 http-nio-8088-exec-8 INFO filter url:/js/registered.js
+2018-12-26 17:57:56 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:56 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:57:56 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:57:56 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:56 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:57:56 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:57:56 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:58 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:57:58 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:58 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:57:58 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:57:58 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:58 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 17:57:58 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:57:58 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:58 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:57:58 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:57:58 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:58 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:57:58 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:57:58 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:58 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:57:58 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:57:58 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:58 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:57:58 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:57:58 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:58 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:57:59 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:57:59 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:59 http-nio-8088-exec-9 INFO filter url:/favicon.ico
+2018-12-26 17:57:59 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:57:59 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:57:59 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:57:59 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:57:59 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:57:59 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:58:00 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:58:00 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:00 http-nio-8088-exec-9 INFO filter url:/js/registered.js
+2018-12-26 17:58:00 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:58:00 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:17 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 17:58:17 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:17 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:58:17 http-nio-8088-exec-6 INFO filter url:/js/registered.js
+2018-12-26 17:58:17 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:17 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:58:19 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:58:19 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:19 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:58:19 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 17:58:19 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:20 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 17:58:20 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:58:20 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:20 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 17:58:20 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:21 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:58:21 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:21 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:58:21 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:58:21 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:53 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:58:53 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:53 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:58:53 http-nio-8088-exec-6 INFO filter url:/js/login.js
+2018-12-26 17:58:53 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:53 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:58:53 http-nio-8088-exec-10 INFO filter url:/html/login.html
+2018-12-26 17:58:53 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:53 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:58:53 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:58:53 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:54 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:58:54 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:58:54 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:54 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:58:54 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:58:54 http-nio-8088-exec-10 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:54 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:58:54 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:58:54 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:54 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:58:54 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:58:54 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:54 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 17:58:54 http-nio-8088-exec-7 INFO filter url:/html/login.html
+2018-12-26 17:58:54 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:54 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:58:54 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:58:54 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:54 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:58:54 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:58:54 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:58:54 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:58:54 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:55 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:55 http-nio-8088-exec-1 INFO filter url:/favicon.ico
+2018-12-26 17:58:55 http-nio-8088-exec-4 INFO filter url:/html/login.html
+2018-12-26 17:58:55 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:55 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:58:55 http-nio-8088-exec-8 INFO filter url:/js/login.js
+2018-12-26 17:58:55 http-nio-8088-exec-3 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:55 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2018-12-26 17:58:55 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2018-12-26 17:58:55 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:55 http-nio-8088-exec-7 INFO filter url:/css/login.css
+2018-12-26 17:58:55 http-nio-8088-exec-1 INFO filter url:/js/login.js
+2018-12-26 17:58:55 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:55 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2018-12-26 17:58:55 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2018-12-26 17:58:55 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 17:58:55 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:55 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:58:55 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:55 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:58:57 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 17:58:57 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:57 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:58:57 http-nio-8088-exec-8 INFO filter url:/js/registered.js
+2018-12-26 17:58:57 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:58:59 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:58:59 http-nio-8088-exec-5 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:58:59 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:58:59 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2018-12-26 17:58:59 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:00 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 17:59:00 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:00 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 17:59:00 http-nio-8088-exec-6 INFO filter url:/js/registered.js
+2018-12-26 17:59:00 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:01 http-nio-8088-exec-3 INFO filter url:/html/login.html
+2018-12-26 17:59:01 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:01 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:59:01 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:59:01 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:20 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2018-12-26 17:59:20 http-nio-8088-exec-8 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:20 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:59:20 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2018-12-26 17:59:20 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:20 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 17:59:21 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 17:59:21 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 17:59:21 http-nio-8088-exec-7 INFO filter url:/js/login.js
+2018-12-26 17:59:21 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:21 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:21 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2018-12-26 17:59:21 http-nio-8088-exec-8 INFO filter url:/html/login.html
+2018-12-26 17:59:21 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 17:59:21 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:21 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:59:21 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:21 http-nio-8088-exec-7 INFO filter url:/favicon.ico
+2018-12-26 17:59:22 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:59:22 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:22 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:59:22 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 17:59:22 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:23 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:59:23 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:23 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 17:59:23 http-nio-8088-exec-5 INFO filter url:/js/login.js
+2018-12-26 17:59:23 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:24 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:59:24 http-nio-8088-exec-4 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:24 http-nio-8088-exec-10 INFO filter url:/css/login.css
+2018-12-26 17:59:24 http-nio-8088-exec-1 INFO filter url:/js/registered.js
+2018-12-26 17:59:24 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:26 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:59:26 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:26 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:59:26 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:59:26 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:28 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:59:28 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:28 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 17:59:28 http-nio-8088-exec-4 INFO filter url:/js/registered.js
+2018-12-26 17:59:28 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:29 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:59:29 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:29 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:59:29 http-nio-8088-exec-9 INFO filter url:/js/login.js
+2018-12-26 17:59:29 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:30 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:59:30 http-nio-8088-exec-1 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:30 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:59:30 http-nio-8088-exec-10 INFO filter url:/js/registered.js
+2018-12-26 17:59:30 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:31 http-nio-8088-exec-6 INFO filter url:/html/login.html
+2018-12-26 17:59:31 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:31 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 17:59:31 http-nio-8088-exec-3 INFO filter url:/js/login.js
+2018-12-26 17:59:31 http-nio-8088-exec-7 INFO filter url:/image/qingnv.jpg
+2018-12-26 17:59:32 http-nio-8088-exec-2 INFO filter url:/html/registered.html
+2018-12-26 17:59:32 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 17:59:32 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 17:59:32 http-nio-8088-exec-1 INFO filter url:/js/registered.js
+2018-12-26 17:59:32 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:47 http-nio-8088-exec-9 INFO filter url:/html/registered.html
+2018-12-26 18:00:47 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:47 http-nio-8088-exec-2 INFO filter url:/css/login.css
+2018-12-26 18:00:47 http-nio-8088-exec-1 INFO filter url:/js/registered.js
+2018-12-26 18:00:47 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:47 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 18:00:48 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 18:00:48 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:48 http-nio-8088-exec-5 INFO filter url:/js/registered.js
+2018-12-26 18:00:48 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2018-12-26 18:00:48 http-nio-8088-exec-9 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:48 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 18:00:49 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 18:00:49 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:49 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 18:00:49 http-nio-8088-exec-10 INFO filter url:/js/registered.js
+2018-12-26 18:00:49 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:49 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 18:00:49 http-nio-8088-exec-5 INFO filter url:/html/registered.html
+2018-12-26 18:00:49 http-nio-8088-exec-6 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:49 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 18:00:49 http-nio-8088-exec-2 INFO filter url:/js/registered.js
+2018-12-26 18:00:49 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:49 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 18:00:49 http-nio-8088-exec-4 INFO filter url:/html/registered.html
+2018-12-26 18:00:49 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:49 http-nio-8088-exec-8 INFO filter url:/css/login.css
+2018-12-26 18:00:49 http-nio-8088-exec-3 INFO filter url:/js/registered.js
+2018-12-26 18:00:49 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:49 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 18:00:50 http-nio-8088-exec-6 INFO filter url:/html/registered.html
+2018-12-26 18:00:50 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:50 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2018-12-26 18:00:50 http-nio-8088-exec-10 INFO filter url:/js/registered.js
+2018-12-26 18:00:50 http-nio-8088-exec-4 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:50 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2018-12-26 18:00:50 http-nio-8088-exec-8 INFO filter url:/html/registered.html
+2018-12-26 18:00:50 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:50 http-nio-8088-exec-2 INFO filter url:/js/registered.js
+2018-12-26 18:00:50 http-nio-8088-exec-5 INFO filter url:/css/login.css
+2018-12-26 18:00:50 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:50 http-nio-8088-exec-10 INFO filter url:/favicon.ico
+2018-12-26 18:00:50 http-nio-8088-exec-1 INFO filter url:/html/registered.html
+2018-12-26 18:00:50 http-nio-8088-exec-9 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:00:50 http-nio-8088-exec-4 INFO filter url:/css/login.css
+2018-12-26 18:00:50 http-nio-8088-exec-3 INFO filter url:/js/registered.js
+2018-12-26 18:00:50 http-nio-8088-exec-8 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:00:50 http-nio-8088-exec-2 INFO filter url:/favicon.ico
+2018-12-26 18:01:13 http-nio-8088-exec-5 INFO filter url:/html/login.html
+2018-12-26 18:01:13 http-nio-8088-exec-7 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:01:13 http-nio-8088-exec-6 INFO filter url:/css/login.css
+2018-12-26 18:01:13 http-nio-8088-exec-10 INFO filter url:/js/login.js
+2018-12-26 18:01:13 http-nio-8088-exec-1 INFO filter url:/image/qingnv.jpg
+2018-12-26 18:01:15 http-nio-8088-exec-4 INFO filter url:/html/registered.html
+2018-12-26 18:01:15 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2018-12-26 18:01:15 http-nio-8088-exec-9 INFO filter url:/css/login.css
+2018-12-26 18:01:15 http-nio-8088-exec-8 INFO filter url:/js/registered.js
+2018-12-26 18:01:15 http-nio-8088-exec-2 INFO filter url:/image/qingnv.jpg
