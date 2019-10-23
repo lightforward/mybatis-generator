@@ -2,6 +2,7 @@ package com.example.user.controller;
 
 import com.example.user.UserApplication;
 import com.example.user.mapper.UserMapper;
+import com.example.user.model.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -52,10 +53,9 @@ public class HelloControllerTest {
         param.put("userName", "admin");
         param.put("passWord", "password");
         param.put("registeredTime", simpleDateFormat.format(new Date()));
-        List<Map> msg = userMapper.loginUser(param);
+        User user = userMapper.loginUser(param);
         AtomicInteger atomicInteger = new AtomicInteger();
-
-        System.out.println(msg);
+        System.out.println(user);
     }
 
 

@@ -81,25 +81,19 @@ public class UserController {
     public Object login(HttpServletRequest request) {
         logger.error("logback 访问:登录接口");
         String userName = request.getParameter("userName");
-        String password = request.getParameter("password");
+        String passWord = request.getParameter("passWord");
         Map<Object, Object> param = new HashMap<Object, Object>();
         param.put("userName", userName);
-        param.put("passWord", password);
-        List<Map> list = userService.loginUser(param);
+        param.put("passWord", passWord);
+        User user = userService.loginUser(param);
         Map<Object, Object> result = new HashMap<Object, Object>();
-        if(list.size() == 1) {
+        if(user != null) {
             result.put("resultCode", 200);
             result.put("msg", "登录成功");
-            // 登录用户保存到session中.
-            User loginUser = new User();
-            loginUser.setUserName(userName);
-            setSession(request, loginUser);
-        }else if(list.size() == 0 || list == null ) {
-            result.put("resultCode", 500);
-            result.put("msg", "用户名或者密码错误");
+            setSession(request, user);
         }else {
             result.put("resultCode", 500);
-            result.put("msg", "未知错误,登录失败,请联系管理员");
+            result.put("msg", "用户名或者密码错误");
         }
         return result;
     }

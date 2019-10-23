@@ -6,7 +6,7 @@
         INSERT INTO test_user(userName, passWord, registeredTime) VALUES('${userName}', '${passWord}', '${registeredTime}')
     </insert>
 
-    <select id="loginUser" parameterType="java.util.Map" resultType="map">
+    <select id="loginUser" parameterType="java.util.Map" resultType="com.example.user.model.User">
         select * from test_user where userName = '${userName}' and passWord = '${passWord}'
     </select>
 </mapper>

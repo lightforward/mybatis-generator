@@ -2609,3 +2609,536 @@ expected <block end>, but found Scalar
 2019-10-23 16:57:07 http-nio-8088-exec-3 INFO filter url:/js/echartsDemo/westeros.js
 2019-10-23 16:57:07 http-nio-8088-exec-4 INFO filter url:/echarts/map/china.json
 2019-10-23 16:57:07 http-nio-8088-exec-2 INFO filter url:/echarts/map/610000.json
+2019-10-23 17:20:41 main INFO Starting UserApplication on LAPTOP-V3OSIK58 with PID 10660 (D:\myExercise\mybatis-generator\echartsDemo\target\classes started by wanheat in D:\myExercise\mybatis-generator\echartsDemo)
+2019-10-23 17:20:41 main DEBUG Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-10-23 17:20:41 main INFO No active profile set, falling back to default profiles: default
+2019-10-23 17:20:41 main INFO Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b9df8a: startup date [Wed Oct 23 17:20:41 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:20:42 main INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a0295ae7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:20:42 main INFO Tomcat initialized with port(s): 8088 (http)
+2019-10-23 17:20:42 main INFO Initializing ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:20:42 main INFO Starting service [Tomcat]
+2019-10-23 17:20:42 main INFO Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-10-23 17:20:42 localhost-startStop-1 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;e:\Program Files (x86)\IETM 3D Viewer;F:\myTools\tomcat\apache-tomcat-7.0.85\lib;F:\myTools\tomcat\apache-tomcat-7.0.85\bin;F:\myTools\apache-maven-3.5.3\bin;F:\myTools\git\install\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;F:\myTools\node\install;D:\soft\nodejs\node_modules\yarn\bin;D:\soft\nodejs\node_modules\electron\dist;;C:\Program Files (x86)\IETM 3D Viewer;C:\Users\wanheat\AppData\Roaming\npm;.]
+2019-10-23 17:20:42 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2019-10-23 17:20:42 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 1342 ms
+2019-10-23 17:20:43 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:20:43 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:20:43 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:20:43 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:20:43 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2019-10-23 17:20:43 localhost-startStop-1 INFO Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-23 17:20:43 localhost-startStop-1 INFO Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-23 17:20:43 localhost-startStop-1 INFO Servlet dispatcherServlet mapped to [/]
+2019-10-23 17:20:43 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:20:44 main INFO Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b9df8a: startup date [Wed Oct 23 17:20:41 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:20:44 main INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:20:44 main INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:20:44 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:20:44 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:20:44 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:20:44 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:20:44 main INFO Adding welcome page: class path resource [static/index.html]
+2019-10-23 17:20:44 main INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 17:20:44 main INFO Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:20:44 main INFO Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:20:44 main INFO Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:20:44 main INFO Registering beans for JMX exposure on startup
+2019-10-23 17:20:44 main INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-23 17:20:44 main INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-23 17:20:44 main INFO Starting ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:20:44 main INFO Using a shared selector for servlet write/read
+2019-10-23 17:20:44 main INFO Tomcat started on port(s): 8088 (http) with context path ''
+2019-10-23 17:20:44 main INFO Started UserApplication in 3.513 seconds (JVM running for 4.725)
+2019-10-23 17:20:45 RMI TCP Connection(4)-127.0.0.1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:20:45 RMI TCP Connection(4)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:20:45 RMI TCP Connection(4)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-10-23 17:20:45 RMI TCP Connection(6)-127.0.0.1 INFO {dataSource-1} inited
+2019-10-23 17:21:27 http-nio-8088-exec-1 INFO filter url:/html/echartsDemo/echartsDemo1.html
+2019-10-23 17:21:27 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2019-10-23 17:21:27 http-nio-8088-exec-4 INFO filter url:/js/echartsDemo/echartsDemo1.js
+2019-10-23 17:21:27 http-nio-8088-exec-5 INFO filter url:/js/echartsDemo/mapData.js
+2019-10-23 17:21:27 http-nio-8088-exec-7 INFO filter url:/echarts/map/china.json
+2019-10-23 17:21:28 http-nio-8088-exec-6 INFO filter url:/js/echartsDemo/westeros.js
+2019-10-23 17:21:28 http-nio-8088-exec-3 INFO filter url:/echarts/min/echarts.min.js
+2019-10-23 17:21:28 http-nio-8088-exec-5 INFO filter url:/echarts/map/610000.json
+2019-10-23 17:21:28 http-nio-8088-exec-8 INFO filter url:/favicon.ico
+2019-10-23 17:21:29 http-nio-8088-exec-9 INFO filter url:/html/login.html
+2019-10-23 17:21:30 http-nio-8088-exec-10 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2019-10-23 17:21:30 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2019-10-23 17:21:30 http-nio-8088-exec-2 INFO filter url:/js/login.js
+2019-10-23 17:21:30 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2019-10-23 17:21:30 http-nio-8088-exec-4 INFO filter url:/favicon.ico
+2019-10-23 17:21:31 http-nio-8088-exec-7 INFO filter url:/user/login
+2019-10-23 17:21:31 http-nio-8088-exec-7 ERROR logback 访问:登录接口
+2019-10-23 17:21:31 http-nio-8088-exec-7 DEBUG ==>  Preparing: select * from test_user where userName = 'admin' and passWord = 'admin' 
+2019-10-23 17:21:31 http-nio-8088-exec-7 DEBUG ==> Parameters: 
+2019-10-23 17:21:31 http-nio-8088-exec-7 DEBUG <==      Total: 1
+2019-10-23 17:21:31 http-nio-8088-exec-7 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.util.HashMap cannot be cast to com.example.user.model.User] with root cause
+java.lang.ClassCastException: java.util.HashMap cannot be cast to com.example.user.model.User
+	at com.sun.proxy.$Proxy90.loginUser(Unknown Source)
+	at com.example.user.UserServiceImpl.UserServiceImpl.loginUser(UserServiceImpl.java:24)
+	at com.example.user.UserServiceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$5ea3c054.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.example.user.UserServiceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$266f33f1.loginUser(<generated>)
+	at com.example.user.controller.UserController.login(UserController.java:88)
+	at com.example.user.controller.UserController$$FastClassBySpringCGLIB$$3d34c27.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.example.user.controller.UserController$$EnhancerBySpringCGLIB$$a5660053.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.user.fileter.LoginFileter.doFilter(LoginFileter.java:45)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-23 17:22:00 main INFO Starting UserApplication on LAPTOP-V3OSIK58 with PID 14416 (D:\myExercise\mybatis-generator\echartsDemo\target\classes started by wanheat in D:\myExercise\mybatis-generator\echartsDemo)
+2019-10-23 17:22:00 main DEBUG Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-10-23 17:22:00 main INFO No active profile set, falling back to default profiles: default
+2019-10-23 17:22:01 main INFO Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@aafcffa: startup date [Wed Oct 23 17:22:01 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:22:01 main INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b31f5d32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:22:02 main INFO Tomcat initialized with port(s): 8088 (http)
+2019-10-23 17:22:02 main INFO Initializing ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:22:02 main INFO Starting service [Tomcat]
+2019-10-23 17:22:02 main INFO Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-10-23 17:22:02 localhost-startStop-1 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;e:\Program Files (x86)\IETM 3D Viewer;F:\myTools\tomcat\apache-tomcat-7.0.85\lib;F:\myTools\tomcat\apache-tomcat-7.0.85\bin;F:\myTools\apache-maven-3.5.3\bin;F:\myTools\git\install\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;F:\myTools\node\install;D:\soft\nodejs\node_modules\yarn\bin;D:\soft\nodejs\node_modules\electron\dist;;C:\Program Files (x86)\IETM 3D Viewer;C:\Users\wanheat\AppData\Roaming\npm;.]
+2019-10-23 17:22:02 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2019-10-23 17:22:02 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 1312 ms
+2019-10-23 17:22:03 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:22:03 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:22:03 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:22:03 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:22:03 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2019-10-23 17:22:03 localhost-startStop-1 INFO Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-23 17:22:03 localhost-startStop-1 INFO Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-23 17:22:03 localhost-startStop-1 INFO Servlet dispatcherServlet mapped to [/]
+2019-10-23 17:22:03 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:22:03 main INFO Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@aafcffa: startup date [Wed Oct 23 17:22:01 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:22:03 main INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:22:03 main INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:22:03 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:22:03 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:22:03 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:22:03 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:22:03 main INFO Adding welcome page: class path resource [static/index.html]
+2019-10-23 17:22:03 main INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 17:22:03 main INFO Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:22:03 main INFO Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:22:03 main INFO Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:22:03 main INFO Registering beans for JMX exposure on startup
+2019-10-23 17:22:03 main INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-23 17:22:03 main INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-23 17:22:03 main INFO Starting ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:22:03 main INFO Using a shared selector for servlet write/read
+2019-10-23 17:22:03 main INFO Tomcat started on port(s): 8088 (http) with context path ''
+2019-10-23 17:22:03 main INFO Started UserApplication in 3.341 seconds (JVM running for 4.584)
+2019-10-23 17:22:04 RMI TCP Connection(6)-127.0.0.1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:22:04 RMI TCP Connection(6)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:22:04 RMI TCP Connection(6)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2019-10-23 17:22:04 RMI TCP Connection(4)-127.0.0.1 INFO {dataSource-1} inited
+2019-10-23 17:22:09 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2019-10-23 17:22:09 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2019-10-23 17:22:09 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2019-10-23 17:22:09 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2019-10-23 17:22:09 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2019-10-23 17:22:09 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2019-10-23 17:22:11 http-nio-8088-exec-7 INFO filter url:/user/login
+2019-10-23 17:22:11 http-nio-8088-exec-7 ERROR logback 访问:登录接口
+2019-10-23 17:22:11 http-nio-8088-exec-7 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.example.user.mapper.UserMapper.map] with root cause
+java.lang.IllegalArgumentException: Result Maps collection does not contain value for com.example.user.mapper.UserMapper.map
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:758)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:753)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:249)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:219)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy90.loginUser(Unknown Source)
+	at com.example.user.UserServiceImpl.UserServiceImpl.loginUser(UserServiceImpl.java:24)
+	at com.example.user.UserServiceImpl.UserServiceImpl$$FastClassBySpringCGLIB$$5ea3c054.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.example.user.UserServiceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$83c4638e.loginUser(<generated>)
+	at com.example.user.controller.UserController.login(UserController.java:88)
+	at com.example.user.controller.UserController$$FastClassBySpringCGLIB$$3d34c27.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.example.user.controller.UserController$$EnhancerBySpringCGLIB$$28fa7da2.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.user.fileter.LoginFileter.doFilter(LoginFileter.java:45)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-23 17:23:06 main INFO Starting UserApplication on LAPTOP-V3OSIK58 with PID 11928 (D:\myExercise\mybatis-generator\echartsDemo\target\classes started by wanheat in D:\myExercise\mybatis-generator\echartsDemo)
+2019-10-23 17:23:06 main DEBUG Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-10-23 17:23:06 main INFO No active profile set, falling back to default profiles: default
+2019-10-23 17:23:06 main INFO Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b5f4d54: startup date [Wed Oct 23 17:23:06 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:23:07 main INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db8a6553] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:23:07 main INFO Tomcat initialized with port(s): 8088 (http)
+2019-10-23 17:23:07 main INFO Initializing ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:23:07 main INFO Starting service [Tomcat]
+2019-10-23 17:23:07 main INFO Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-10-23 17:23:07 localhost-startStop-1 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;e:\Program Files (x86)\IETM 3D Viewer;F:\myTools\tomcat\apache-tomcat-7.0.85\lib;F:\myTools\tomcat\apache-tomcat-7.0.85\bin;F:\myTools\apache-maven-3.5.3\bin;F:\myTools\git\install\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;F:\myTools\node\install;D:\soft\nodejs\node_modules\yarn\bin;D:\soft\nodejs\node_modules\electron\dist;;C:\Program Files (x86)\IETM 3D Viewer;C:\Users\wanheat\AppData\Roaming\npm;.]
+2019-10-23 17:23:07 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2019-10-23 17:23:07 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 1375 ms
+2019-10-23 17:23:08 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:23:08 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:23:08 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:23:08 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:23:08 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2019-10-23 17:23:08 localhost-startStop-1 INFO Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-23 17:23:08 localhost-startStop-1 INFO Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-23 17:23:08 localhost-startStop-1 INFO Servlet dispatcherServlet mapped to [/]
+2019-10-23 17:23:08 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:23:09 main INFO Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b5f4d54: startup date [Wed Oct 23 17:23:06 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:23:09 main INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:23:09 main INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:23:09 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:23:09 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:23:09 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:23:09 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:23:09 main INFO Adding welcome page: class path resource [static/index.html]
+2019-10-23 17:23:09 main INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 17:23:09 main INFO Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:23:09 main INFO Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:23:09 main INFO Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:23:09 main INFO Registering beans for JMX exposure on startup
+2019-10-23 17:23:09 main INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-23 17:23:09 main INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-23 17:23:09 main INFO Starting ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:23:09 main INFO Using a shared selector for servlet write/read
+2019-10-23 17:23:09 main INFO Tomcat started on port(s): 8088 (http) with context path ''
+2019-10-23 17:23:09 main INFO Started UserApplication in 3.499 seconds (JVM running for 4.68)
+2019-10-23 17:23:10 RMI TCP Connection(5)-127.0.0.1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:23:10 RMI TCP Connection(5)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:23:10 RMI TCP Connection(5)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-10-23 17:23:10 RMI TCP Connection(4)-127.0.0.1 INFO {dataSource-1} inited
+2019-10-23 17:23:14 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2019-10-23 17:23:14 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2019-10-23 17:23:14 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2019-10-23 17:23:14 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2019-10-23 17:23:14 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2019-10-23 17:23:14 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2019-10-23 17:23:15 http-nio-8088-exec-7 INFO filter url:/user/login
+2019-10-23 17:23:15 http-nio-8088-exec-7 ERROR logback 访问:登录接口
+2019-10-23 17:23:15 http-nio-8088-exec-7 DEBUG ==>  Preparing: select * from test_user where userName = 'admin' and passWord = 'admin' 
+2019-10-23 17:23:15 http-nio-8088-exec-7 DEBUG ==> Parameters: 
+2019-10-23 17:23:15 http-nio-8088-exec-7 DEBUG <==      Total: 1
+2019-10-23 17:23:15 http-nio-8088-exec-7 INFO 切面。。。。。
+2019-10-23 17:23:15 http-nio-8088-exec-7 INFO SysLog(id=null, username=admin, operation=用户登录, method=com.example.user.controller.UserController.login, params=[], ip=0:0:0:0:0:0:0:1, createDate=Wed Oct 23 17:23:15 GMT+08:00 2019)
+2019-10-23 17:25:06 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2019-10-23 17:25:06 http-nio-8088-exec-3 INFO filter url:/favicon.ico
+2019-10-23 17:25:07 http-nio-8088-exec-4 INFO filter url:/user/login
+2019-10-23 17:25:07 http-nio-8088-exec-4 ERROR logback 访问:登录接口
+2019-10-23 17:25:07 http-nio-8088-exec-4 DEBUG ==>  Preparing: select * from test_user where userName = 'admin' and passWord = 'admin' 
+2019-10-23 17:25:07 http-nio-8088-exec-4 DEBUG ==> Parameters: 
+2019-10-23 17:25:07 http-nio-8088-exec-4 DEBUG <==      Total: 1
+2019-10-23 17:25:18 http-nio-8088-exec-4 INFO 切面。。。。。
+2019-10-23 17:25:18 http-nio-8088-exec-4 INFO SysLog(id=null, username=admin, operation=用户登录, method=com.example.user.controller.UserController.login, params=[], ip=0:0:0:0:0:0:0:1, createDate=Wed Oct 23 17:25:18 GMT+08:00 2019)
+2019-10-23 17:28:07 main INFO Starting UserApplication on LAPTOP-V3OSIK58 with PID 15276 (D:\myExercise\mybatis-generator\echartsDemo\target\classes started by wanheat in D:\myExercise\mybatis-generator\echartsDemo)
+2019-10-23 17:28:07 main DEBUG Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-10-23 17:28:07 main INFO No active profile set, falling back to default profiles: default
+2019-10-23 17:28:07 main INFO Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79d94571: startup date [Wed Oct 23 17:28:07 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:28:08 main INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9595440d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:28:09 main INFO Tomcat initialized with port(s): 8088 (http)
+2019-10-23 17:28:09 main INFO Initializing ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:28:09 main INFO Starting service [Tomcat]
+2019-10-23 17:28:09 main INFO Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-10-23 17:28:09 localhost-startStop-1 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;e:\Program Files (x86)\IETM 3D Viewer;F:\myTools\tomcat\apache-tomcat-7.0.85\lib;F:\myTools\tomcat\apache-tomcat-7.0.85\bin;F:\myTools\apache-maven-3.5.3\bin;F:\myTools\git\install\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;F:\myTools\node\install;D:\soft\nodejs\node_modules\yarn\bin;D:\soft\nodejs\node_modules\electron\dist;;C:\Program Files (x86)\IETM 3D Viewer;C:\Users\wanheat\AppData\Roaming\npm;.]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2019-10-23 17:28:09 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 1473 ms
+2019-10-23 17:28:09 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-23 17:28:09 localhost-startStop-1 INFO Servlet dispatcherServlet mapped to [/]
+2019-10-23 17:28:10 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:28:10 main INFO Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79d94571: startup date [Wed Oct 23 17:28:07 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:28:10 main INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:28:10 main INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.login(javax.servlet.http.HttpServletRequest,com.example.user.model.User)
+2019-10-23 17:28:10 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:28:10 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:28:10 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:28:10 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:28:10 main INFO Adding welcome page: class path resource [static/index.html]
+2019-10-23 17:28:10 main INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 17:28:10 main INFO Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:28:10 main INFO Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:28:10 main INFO Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:28:10 main INFO Registering beans for JMX exposure on startup
+2019-10-23 17:28:10 main INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-23 17:28:10 main INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-23 17:28:10 main INFO Starting ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:28:10 main INFO Using a shared selector for servlet write/read
+2019-10-23 17:28:10 main INFO Tomcat started on port(s): 8088 (http) with context path ''
+2019-10-23 17:28:10 main INFO Started UserApplication in 3.545 seconds (JVM running for 4.719)
+2019-10-23 17:28:11 RMI TCP Connection(6)-127.0.0.1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:28:11 RMI TCP Connection(6)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:28:11 RMI TCP Connection(6)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2019-10-23 17:28:11 RMI TCP Connection(4)-127.0.0.1 INFO {dataSource-1} inited
+2019-10-23 17:28:18 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2019-10-23 17:28:18 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2019-10-23 17:28:18 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2019-10-23 17:28:18 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2019-10-23 17:28:18 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2019-10-23 17:28:18 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2019-10-23 17:28:26 http-nio-8088-exec-7 INFO filter url:/user/login
+2019-10-23 17:28:30 http-nio-8088-exec-8 INFO filter url:/user/login
+2019-10-23 17:28:30 http-nio-8088-exec-9 INFO filter url:/user/login
+2019-10-23 17:28:30 http-nio-8088-exec-10 INFO filter url:/user/login
+2019-10-23 17:28:30 http-nio-8088-exec-1 INFO filter url:/user/login
+2019-10-23 17:28:35 http-nio-8088-exec-4 INFO filter url:/user/login
+2019-10-23 17:28:35 http-nio-8088-exec-3 INFO filter url:/user/login
+2019-10-23 17:30:47 main INFO Starting UserApplication on LAPTOP-V3OSIK58 with PID 9648 (D:\myExercise\mybatis-generator\echartsDemo\target\classes started by wanheat in D:\myExercise\mybatis-generator\echartsDemo)
+2019-10-23 17:30:47 main DEBUG Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-10-23 17:30:47 main INFO No active profile set, falling back to default profiles: default
+2019-10-23 17:30:47 main INFO Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f478a81: startup date [Wed Oct 23 17:30:47 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:30:48 main INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b2660c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:30:48 main INFO Tomcat initialized with port(s): 8088 (http)
+2019-10-23 17:30:48 main INFO Initializing ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:30:48 main INFO Starting service [Tomcat]
+2019-10-23 17:30:48 main INFO Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-10-23 17:30:48 localhost-startStop-1 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;e:\Program Files (x86)\IETM 3D Viewer;F:\myTools\tomcat\apache-tomcat-7.0.85\lib;F:\myTools\tomcat\apache-tomcat-7.0.85\bin;F:\myTools\apache-maven-3.5.3\bin;F:\myTools\git\install\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;F:\myTools\node\install;D:\soft\nodejs\node_modules\yarn\bin;D:\soft\nodejs\node_modules\electron\dist;;C:\Program Files (x86)\IETM 3D Viewer;C:\Users\wanheat\AppData\Roaming\npm;.]
+2019-10-23 17:30:48 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2019-10-23 17:30:48 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 1410 ms
+2019-10-23 17:30:49 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:30:49 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:30:49 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:30:49 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:30:49 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2019-10-23 17:30:49 localhost-startStop-1 INFO Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-23 17:30:49 localhost-startStop-1 INFO Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-23 17:30:49 localhost-startStop-1 INFO Servlet dispatcherServlet mapped to [/]
+2019-10-23 17:30:49 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:30:49 main INFO Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f478a81: startup date [Wed Oct 23 17:30:47 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:30:50 main INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:30:50 main INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.login(javax.servlet.http.HttpServletRequest,com.example.user.model.User)
+2019-10-23 17:30:50 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:30:50 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:30:50 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:30:50 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:30:50 main INFO Adding welcome page: class path resource [static/index.html]
+2019-10-23 17:30:50 main INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 17:30:50 main INFO Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:30:50 main INFO Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:30:50 main INFO Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:30:50 main INFO Registering beans for JMX exposure on startup
+2019-10-23 17:30:50 main INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-23 17:30:50 main INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-23 17:30:50 main INFO Starting ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:30:50 main INFO Using a shared selector for servlet write/read
+2019-10-23 17:30:50 main INFO Tomcat started on port(s): 8088 (http) with context path ''
+2019-10-23 17:30:50 main INFO Started UserApplication in 3.463 seconds (JVM running for 4.804)
+2019-10-23 17:30:50 RMI TCP Connection(5)-127.0.0.1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:30:50 RMI TCP Connection(5)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:30:50 RMI TCP Connection(5)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2019-10-23 17:30:50 RMI TCP Connection(2)-127.0.0.1 INFO {dataSource-1} inited
+2019-10-23 17:30:55 http-nio-8088-exec-2 INFO filter url:/html/login.html
+2019-10-23 17:30:55 http-nio-8088-exec-3 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2019-10-23 17:30:55 http-nio-8088-exec-1 INFO filter url:/css/login.css
+2019-10-23 17:30:55 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2019-10-23 17:30:55 http-nio-8088-exec-6 INFO filter url:/image/qingnv.jpg
+2019-10-23 17:30:55 http-nio-8088-exec-5 INFO filter url:/favicon.ico
+2019-10-23 17:30:56 http-nio-8088-exec-7 INFO filter url:/user/login
+2019-10-23 17:32:55 main INFO Starting UserApplication on LAPTOP-V3OSIK58 with PID 2976 (D:\myExercise\mybatis-generator\echartsDemo\target\classes started by wanheat in D:\myExercise\mybatis-generator\echartsDemo)
+2019-10-23 17:32:55 main DEBUG Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-10-23 17:32:55 main INFO No active profile set, falling back to default profiles: default
+2019-10-23 17:32:55 main INFO Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47a86fbb: startup date [Wed Oct 23 17:32:55 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:32:56 main INFO Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49ee3830] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:32:57 main INFO Tomcat initialized with port(s): 8088 (http)
+2019-10-23 17:32:57 main INFO Initializing ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:32:57 main INFO Starting service [Tomcat]
+2019-10-23 17:32:57 main INFO Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-10-23 17:32:57 localhost-startStop-1 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;e:\Program Files (x86)\IETM 3D Viewer;F:\myTools\tomcat\apache-tomcat-7.0.85\lib;F:\myTools\tomcat\apache-tomcat-7.0.85\bin;F:\myTools\apache-maven-3.5.3\bin;F:\myTools\git\install\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;F:\myTools\node\install;D:\soft\nodejs\node_modules\yarn\bin;D:\soft\nodejs\node_modules\electron\dist;;C:\Program Files (x86)\IETM 3D Viewer;C:\Users\wanheat\AppData\Roaming\npm;.]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2019-10-23 17:32:57 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 1288 ms
+2019-10-23 17:32:57 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Mapping filter: 'loginFileter' to urls: [/*]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-23 17:32:57 localhost-startStop-1 INFO Servlet dispatcherServlet mapped to [/]
+2019-10-23 17:32:58 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:32:58 main INFO Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47a86fbb: startup date [Wed Oct 23 17:32:55 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:32:58 main INFO Mapped "{[/user/registered],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.registered(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:32:58 main INFO Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Object com.example.user.controller.UserController.login(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:32:58 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:32:58 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:32:58 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:32:58 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:32:58 main INFO Adding welcome page: class path resource [static/index.html]
+2019-10-23 17:32:58 main INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 17:32:58 main INFO Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:32:58 main INFO Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-23 17:32:58 main INFO Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:32:58 main INFO Registering beans for JMX exposure on startup
+2019-10-23 17:32:58 main INFO Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-23 17:32:58 main INFO Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-23 17:32:58 main INFO Starting ProtocolHandler ["http-nio-8088"]
+2019-10-23 17:32:58 main INFO Using a shared selector for servlet write/read
+2019-10-23 17:32:58 main INFO Tomcat started on port(s): 8088 (http) with context path ''
+2019-10-23 17:32:58 main INFO Started UserApplication in 3.369 seconds (JVM running for 4.486)
+2019-10-23 17:32:59 RMI TCP Connection(5)-127.0.0.1 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:32:59 RMI TCP Connection(5)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:32:59 RMI TCP Connection(5)-127.0.0.1 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-10-23 17:32:59 RMI TCP Connection(2)-127.0.0.1 INFO {dataSource-1} inited
+2019-10-23 17:33:05 http-nio-8088-exec-1 INFO filter url:/html/login.html
+2019-10-23 17:33:05 http-nio-8088-exec-2 INFO filter url:/jsLibrary/jquery.3.1.1.js
+2019-10-23 17:33:05 http-nio-8088-exec-3 INFO filter url:/css/login.css
+2019-10-23 17:33:05 http-nio-8088-exec-4 INFO filter url:/js/login.js
+2019-10-23 17:33:05 http-nio-8088-exec-5 INFO filter url:/image/qingnv.jpg
+2019-10-23 17:33:06 http-nio-8088-exec-6 INFO filter url:/favicon.ico
+2019-10-23 17:33:07 http-nio-8088-exec-7 INFO filter url:/user/login
+2019-10-23 17:33:07 http-nio-8088-exec-7 ERROR logback 访问:登录接口
+2019-10-23 17:33:07 http-nio-8088-exec-7 DEBUG ==>  Preparing: select * from test_user where userName = 'admin' and passWord = 'admin' 
+2019-10-23 17:33:07 http-nio-8088-exec-7 DEBUG ==> Parameters: 
+2019-10-23 17:33:07 http-nio-8088-exec-7 DEBUG <==      Total: 1
+2019-10-23 17:33:07 http-nio-8088-exec-7 INFO 切面。。。。。
+2019-10-23 17:33:07 http-nio-8088-exec-7 INFO SysLog(id=null, username=admin, operation=用户登录, method=com.example.user.controller.UserController.login, params=[], ip=0:0:0:0:0:0:0:1, createDate=Wed Oct 23 17:33:07 GMT+08:00 2019)
+2019-10-23 17:33:07 http-nio-8088-exec-8 INFO filter url:/echarts/min/echarts.js.map
