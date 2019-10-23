@@ -1,5 +1,6 @@
 package com.example.user.controller;
 
+import com.example.user.aop.MyLog;
 import com.example.user.model.User;
 import com.example.user.service.UserService;
 import org.slf4j.Logger;
@@ -75,6 +76,7 @@ public class UserController {
      * @param request
      * @return
      */
+    @MyLog(value = "用户登录")  //这里添加了AOP的自定义注解
     @RequestMapping(value = "login",method=RequestMethod.POST)
     public Object login(HttpServletRequest request) {
         logger.error("logback 访问:登录接口");
@@ -91,6 +93,7 @@ public class UserController {
             // 登录用户保存到session中.
             User loginUser = new User();
             loginUser.setUserName(userName);
+            setSession(request, loginUser);
         }else if(list.size() == 0 || list == null ) {
             result.put("resultCode", 500);
             result.put("msg", "用户名或者密码错误");
@@ -99,5 +102,13 @@ public class UserController {
             result.put("msg", "未知错误,登录失败,请联系管理员");
         }
         return result;
+    }
+
+    public void setSession(HttpServletRequest request, User loginUser){
+        //使用request对象的getSession()获取session，如果session不存在则创建一个
+        HttpSession session = request.getSession();
+        //将数据存储到session中
+        session.setAttribute("loginUser", loginUser);
+        session.setMaxInactiveInterval(60 * 20); //单位秒
     }
 }

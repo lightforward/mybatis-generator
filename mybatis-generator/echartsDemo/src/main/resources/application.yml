@@ -39,6 +39,8 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     # 合并多个DruidDataSource的监控数据
     #useGlobalDataSourceStat: true
+  aop:
+    auto: true
 #  jpa:
 #    show-sql: true
 #    properties:
@@ -46,9 +48,9 @@ spring:
 #        hbm2ddl:
 #          auto: create
 # 打印sql
-#logging:
-#  level:
-#    com.example.test.mapper: DEBUG
+logging:
+  level:
+    com.example.test.mapper: DEBUG
 
 
 
