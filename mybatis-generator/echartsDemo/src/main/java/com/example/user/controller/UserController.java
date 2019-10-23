@@ -88,7 +88,7 @@ public class UserController {
         if(list.size() == 1) {
             result.put("resultCode", 200);
             result.put("msg", "登录成功");
-            // 登录用户保存到session中
+            // 登录用户保存到session中.
             User loginUser = new User();
             loginUser.setUserName(userName);
         }else if(list.size() == 0 || list == null ) {
