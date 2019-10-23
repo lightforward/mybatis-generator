@@ -36,6 +36,7 @@ public class UserController {
      * @param request
      * @return
      */
+    @MyLog(value = "用户注册")  //这里添加了AOP的自定义注解
     @RequestMapping(value = "registered",method=RequestMethod.POST)
     public Object registered(HttpServletRequest request) {
         logger.info("logback 访问:注册接口");
